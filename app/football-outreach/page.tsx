@@ -98,7 +98,7 @@ const projects = [
     title: "Portland Thorns - Player Call & Scouting App",
     thumbnail: "/projects/portland-thorns.png",
     summary:
-      "Streamlit scouting workspace for tracking recruitment phone calls, video reviews, follow-ups and per-player dossiers. Insights dashboard aggregates the entire pipeline; Player Summary drills into a single prospect with cascading Conference -> Team -> Player filters and a one-click branded PDF report.",
+      "Streamlit scouting workspace for tracking recruitment phone calls, video reviews, follow-ups and per-player dossiers. Insights dashboard aggregates the entire pipeline and exports into one-click branded PDF report.",
     tools: "Python, Streamlit, Pandas, Altair, ReportLab",
     outcome:
       "Built originally for Portland Thorns FC scouting staff. Public version ships with Showcase Mode pre-loaded with 1,000 fictional calls, 393 video reviews and 300 NCAA prospects so recruiters can explore every page without setup.",
@@ -124,7 +124,7 @@ const projects = [
     title: "Peru Rodriguez - Individual Scouting Report",
     thumbnail: "/projects/peru-rodriguez-scouting-report.png",
     summary:
-      "End-to-end scouting report on Peruvian forward Peru Rodriguez covering profile, technical attributes, tactical fit, statistical benchmarking against league peers, and a final recruitment recommendation. Built from raw event and player data into a presentation-ready PDF.",
+      "End-to-end scouting report on Spanish defender Peru Rodriguez covering profile, technical attributes, tactical fit, statistical benchmarking against league peers, and a final recruitment recommendation. Built from raw event and player data into a presentation-ready PDF.",
     tools: "Wyscout, Python, Pandas, Data Visualisation, Football Scouting Methodology",
     outcome:
       "A self-contained recruitment dossier of the kind shared with technical staff and recruitment leads. Demonstrates how raw event data can be turned into a clear, decision-ready evaluation of an individual player.",
