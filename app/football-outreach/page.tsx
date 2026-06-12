@@ -113,11 +113,8 @@ const projects = [
     tools: "Wyscout, Public Sources, Football Scouting Methodology, Data Visualisation",
     outcome:
       "Pairs the analytical and the off-pitch view of a single target so a recruitment lead has both halves of the picture in one place. Demonstrates how scouting outputs can be packaged for technical staff alongside background due diligence.",
-    liveUrl: "/andrei-ratiu-player-report.pdf",
-    liveLabel: "Player Report",
-    extraLinks: [
-      { url: "/andrei-ratiu-due-diligence-report.pdf", label: "Due Diligence Report" },
-    ],
+    liveUrl: "/andrei-ratiu-report.pdf",
+    liveLabel: "View Report",
     codeUrl: "#",
   },
   {
