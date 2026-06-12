@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables */
+:root {
+  --ocean-50: #f0f9ff;
+  --ocean-100: #e0f2fe;
+  --ocean-200: #bae6fd;
+  --ocean-300: #7dd3fc;
+  --ocean-400: #38bdf8;
+  --ocean-500: #0ea5e9;
+  --ocean-600: #0284c7;
+  --ocean-700: #0369a1;
+  --ocean-800: #075985;
+  --ocean-900: #0c4a6e;
+  
+  --surf-50: #f0fdfa;
+  --surf-100: #ccfbf1;
+  --surf-200: #99f6e4;
+  --surf-300: #5eead4;
+  --surf-400: #2dd4bf;
+  --surf-500: #14b8a6;
+  --surf-600: #0d9488;
+  --surf-700: #0f766e;
+  --surf-800: #115e59;
+  --surf-900: #134e4a;
+  
+  --wave-50: #f8fafc;
+  --wave-100: #f1f5f9;
+  --wave-200: #e2e8f0;
+  --wave-300: #cbd5e1;
+  --wave-400: #94a3b8;
+  --wave-500: #64748b;
+  --wave-600: #475569;
+  --wave-700: #334155;
+  --wave-800: #1e293b;
+  --wave-900: #0f172a;
+}
+
+/* Custom Component Classes */
+@layer components {
+  .card {
+    @apply bg-white border border-wave-200 rounded-lg shadow-sm p-6;
+  }
+  
+  .btn-primary {
+    @apply bg-ocean-600 text-white px-4 py-2 rounded-lg hover:bg-ocean-700 transition-colors font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-ocean-600 border border-ocean-600 px-4 py-2 rounded-lg hover:bg-ocean-50 transition-colors font-medium;
+  }
+  
+  .text-ocean-50 { color: var(--ocean-50); }
+  .text-ocean-100 { color: var(--ocean-100); }
+  .text-ocean-200 { color: var(--ocean-200); }
+  .text-ocean-300 { color: var(--ocean-300); }
+  .text-ocean-400 { color: var(--ocean-400); }
+  .text-ocean-500 { color: var(--ocean-500); }
+  .text-ocean-600 { color: var(--ocean-600); }
+  .text-ocean-700 { color: var(--ocean-700); }
+  .text-ocean-800 { color: var(--ocean-800); }
+  .text-ocean-900 { color: var(--ocean-900); }
+  
+  .text-surf-50 { color: var(--surf-50); }
+  .text-surf-100 { color: var(--surf-100); }
+  .text-surf-200 { color: var(--surf-200); }
+  .text-surf-300 { color: var(--surf-300); }
+  .text-surf-400 { color: var(--surf-400); }
+  .text-surf-500 { color: var(--surf-500); }
+  .text-surf-600 { color: var(--surf-600); }
+  .text-surf-700 { color: var(--surf-700); }
+  .text-surf-800 { color: var(--surf-800); }
+  .text-surf-900 { color: var(--surf-900); }
+  
+  .text-wave-50 { color: var(--wave-50); }
+  .text-wave-100 { color: var(--wave-100); }
+  .text-wave-200 { color: var(--wave-200); }
+  .text-wave-300 { color: var(--wave-300); }
+  .text-wave-400 { color: var(--wave-400); }
+  .text-wave-500 { color: var(--wave-500); }
+  .text-wave-600 { color: var(--wave-600); }
+  .text-wave-700 { color: var(--wave-700); }
+  .text-wave-800 { color: var(--wave-800); }
+  .text-wave-900 { color: var(--wave-900); }
+  
+  .bg-ocean-50 { background-color: var(--ocean-50); }
+  .bg-ocean-100 { background-color: var(--ocean-100); }
+  .bg-ocean-200 { background-color: var(--ocean-200); }
+  .bg-ocean-300 { background-color: var(--ocean-300); }
+  .bg-ocean-400 { background-color: var(--ocean-400); }
+  .bg-ocean-500 { background-color: var(--ocean-500); }
+  .bg-ocean-600 { background-color: var(--ocean-600); }
+  .bg-ocean-700 { background-color: var(--ocean-700); }
+  .bg-ocean-800 { background-color: var(--ocean-800); }
+  .bg-ocean-900 { background-color: var(--ocean-900); }
+  
+  .bg-surf-50 { background-color: var(--surf-50); }
+  .bg-surf-100 { background-color: var(--surf-100); }
+  .bg-surf-200 { background-color: var(--surf-200); }
+  .bg-surf-300 { background-color: var(--surf-300); }
+  .bg-surf-400 { background-color: var(--surf-400); }
+  .bg-surf-500 { background-color: var(--surf-500); }
+  .bg-surf-600 { background-color: var(--surf-600); }
+  .bg-surf-700 { background-color: var(--surf-700); }
+  .bg-surf-800 { background-color: var(--surf-800); }
+  .bg-surf-900 { background-color: var(--surf-900); }
+  
+  .bg-wave-50 { background-color: var(--wave-50); }
+  .bg-wave-100 { background-color: var(--wave-100); }
+  .bg-wave-200 { background-color: var(--wave-200); }
+  .bg-wave-300 { background-color: var(--wave-300); }
+  .bg-wave-400 { background-color: var(--wave-400); }
+  .bg-wave-500 { background-color: var(--wave-500); }
+  .bg-wave-600 { background-color: var(--wave-600); }
+  .bg-wave-700 { background-color: var(--wave-700); }
+  .bg-wave-800 { background-color: var(--wave-800); }
+  .bg-wave-900 { background-color: var(--wave-900); }
+  
+  .border-ocean-200 { border-color: var(--ocean-200); }
+  .border-ocean-300 { border-color: var(--ocean-300); }
+  .border-ocean-500 { border-color: var(--ocean-500); }
+  .border-ocean-600 { border-color: var(--ocean-600); }
+  
+  .border-surf-200 { border-color: var(--surf-200); }
+  .border-surf-300 { border-color: var(--surf-300); }
+  .border-surf-500 { border-color: var(--surf-500); }
+  .border-surf-600 { border-color: var(--surf-600); }
+  
+  .border-wave-200 { border-color: var(--wave-200); }
+  .border-wave-300 { border-color: var(--wave-300); }
+  .border-wave-500 { border-color: var(--wave-500); }
+  .border-wave-600 { border-color: var(--wave-600); }
+  .border-wave-800 { border-color: var(--wave-800); }
+}
+
+/* Base Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid var(--ocean-500);
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--wave-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--wave-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--wave-400);
+} 
