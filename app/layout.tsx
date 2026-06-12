@@ -3,7 +3,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Beneath The Barrel - Advanced Surfing Analytics & Wave Predictions',
+  title: 'Daniel Levitt | Football Data Analyst',
   description: 'The ultimate surfing analytics platform. Track WSL performance, predict wave conditions, analyze surfer stats, and compete in bracket prediction games. Real-time data, advanced metrics, and comprehensive insights for surfers, fans, and bettors.',
   keywords: 'surfing analytics, wave predictions, WSL, surf data, performance tracking, bracket predictions, surf betting, wave conditions, surfer stats',
   authors: [{ name: 'Beneath The Barrel' }],
