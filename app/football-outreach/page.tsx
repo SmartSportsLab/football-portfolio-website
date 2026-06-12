@@ -62,28 +62,48 @@ const skillGroups = [
 
 const projects = [
   {
-    title: "Championship - Home Hold-Up Play Analysis",
-    thumbnail: "/projects/championship-home-holds.png",
+    title: "Cibao FC - Wyscout Analytics Hub",
+    thumbnail: "/projects/cibao-fc.png",
     summary:
-      "League-wide tactical study of hold-up play on home soil across the EFL Championship, profiling how target forwards link play, retain possession under pressure and translate physical duels into territorial gain. Combines event data with structured visual analysis to compare clubs and individual players.",
-    tools: "Event Data, Python, Pandas, Data Visualisation, Tactical Analysis",
+      "Streamlit-based analytics workspace built for Cibao FC (Liga Dominicana de Futbol) covering collective performance and opposition analysis from raw Wyscout exports. Multi-page hub spanning Liga and CONCACAF Copa Centroamericana, with a per-90 normalisation pipeline and one-click PDF match reports.",
+    tools: "Python, Streamlit, Pandas, Plotly, ReportLab",
     outcome:
-      "Surfaces which forwards are most valuable as a tactical reference point at home and how their hold-up output supports the team's attacking patterns. Pitchable to recruitment and tactical staff for both opposition prep and target identification.",
-    liveUrl: "/championship-home-holds.pdf",
-    liveLabel: "View Report",
-    codeUrl: "#",
+      "Delivered to the club's analysis staff to drive opposition prep and post-match review. Spanish UI matching the production deployment, with the login gate removed for portfolio use.",
+    liveUrl: "https://cibao-fc-analysis-app.streamlit.app/",
+    codeUrl: "https://github.com/SmartSportsLab/cibao-fc-analysis-app",
   },
   {
-    title: "Post-Match Physical Performance Report",
-    thumbnail: "/projects/physical-performance-report.png",
+    title: "Smart Sports Lab Match Coder",
+    thumbnail: "/projects/match-coder.png",
     summary:
-      "Post-match physical performance report covering team and individual running metrics - distance covered, high-speed running, sprints, accelerations and decelerations - benchmarked against expected outputs and broken down by playing position. Designed for the post-match debrief between performance staff, coaches and analysts.",
-    tools: "GPS / Tracking Data, Python, Pandas, Data Visualisation, Sports Science",
+      "Designed and built a browser-based video tagging tool for football match analysis. Coders can tag passes, shots, defensive actions, dribbles, fouls and pitch zones live, save full sessions, and export to multiple formats (CSV, Excel, XML, JSON, SQL).",
+    tools: "JavaScript, HTML, CSS, GitHub Pages",
     outcome:
-      "Turns raw physical-output data into a clear, position-aware narrative the coaching staff can act on. Demonstrates how to combine sports-science context with analyst-style presentation in a decision-ready format.",
-    liveUrl: "/physical-performance-report-post-match.pdf",
-    liveLabel: "View Report",
-    codeUrl: "#",
+      "Lightweight, no-install tool with custom event templates, button presets and structured exports - usable by any analyst with a browser.",
+    liveUrl: "https://smartsportslab.github.io/football-match-coder/",
+    codeUrl: "https://github.com/smartsportslab/football-match-coder",
+  },
+  {
+    title: "Estudiantes de la Plata — Online Store Intelligence",
+    thumbnail: "/projects/edlp-online-stores.png",
+    summary:
+      "Built a deployed analytics platform for Estudiantes de La Plata benchmarking the official online stores of six Argentine Primera Division clubs (EDLP, Boca, River, Racing, Independiente, San Lorenzo) on range, category mix, pricing, demographic coverage and variant depth.",
+    tools: "Python, Streamlit, Pandas, Web Scraping, Plotly, Render",
+    outcome:
+      "Helps the club see how its online shop compares with Boca, River and other rivals — what's missing, what's priced differently, and where fans aren't being served. Built as the practical output of my Master's thesis with Estudiantes.",
+    liveUrl: "https://edlp-online-stores.onrender.com/",
+    codeUrl: "https://github.com/SmartSportsLab/edlp_online_stores",
+  },
+  {
+    title: "Portland Thorns - Player Call & Scouting App",
+    thumbnail: "/projects/portland-thorns.png",
+    summary:
+      "Streamlit scouting workspace for tracking recruitment phone calls, video reviews, follow-ups and per-player dossiers. Insights dashboard aggregates the entire pipeline; Player Summary drills into a single prospect with cascading Conference -> Team -> Player filters and a one-click branded PDF report.",
+    tools: "Python, Streamlit, Pandas, Altair, ReportLab",
+    outcome:
+      "Built originally for Portland Thorns FC scouting staff. Public version ships with Showcase Mode pre-loaded with 1,000 fictional calls, 393 video reviews and 300 NCAA prospects so recruiters can explore every page without setup.",
+    liveUrl: "https://portland-thorns-analysis.streamlit.app/",
+    codeUrl: "https://github.com/SmartSportsLab/portland-thorns-player-call-app",
   },
   {
     title: "Andrei Ratiu - Player Report & Due Diligence",
@@ -113,48 +133,28 @@ const projects = [
     codeUrl: "#",
   },
   {
-    title: "Portland Thorns - Player Call & Scouting App",
-    thumbnail: "/projects/portland-thorns.png",
+    title: "Post-Match Physical Performance Report",
+    thumbnail: "/projects/physical-performance-report.png",
     summary:
-      "Streamlit scouting workspace for tracking recruitment phone calls, video reviews, follow-ups and per-player dossiers. Insights dashboard aggregates the entire pipeline; Player Summary drills into a single prospect with cascading Conference -> Team -> Player filters and a one-click branded PDF report.",
-    tools: "Python, Streamlit, Pandas, Altair, ReportLab",
+      "Post-match physical performance report covering team and individual running metrics - distance covered, high-speed running, sprints, accelerations and decelerations - benchmarked against expected outputs and broken down by playing position. Designed for the post-match debrief between performance staff, coaches and analysts.",
+    tools: "GPS / Tracking Data, Python, Pandas, Data Visualisation, Sports Science",
     outcome:
-      "Built originally for Portland Thorns FC scouting staff. Public version ships with Showcase Mode pre-loaded with 1,000 fictional calls, 393 video reviews and 300 NCAA prospects so recruiters can explore every page without setup.",
-    liveUrl: "https://portland-thorns-analysis.streamlit.app/",
-    codeUrl: "https://github.com/SmartSportsLab/portland-thorns-player-call-app",
+      "Turns raw physical-output data into a clear, position-aware narrative the coaching staff can act on. Demonstrates how to combine sports-science context with analyst-style presentation in a decision-ready format.",
+    liveUrl: "/physical-performance-report-post-match.pdf",
+    liveLabel: "View Report",
+    codeUrl: "#",
   },
   {
-    title: "EDLP - Online Store Intelligence",
-    thumbnail: "/projects/edlp-online-stores.png",
+    title: "Championship - Home Hold-Up Play Analysis",
+    thumbnail: "/projects/championship-home-holds.png",
     summary:
-      "Built a deployed analytics platform for Estudiantes de La Plata benchmarking the official online stores of six Argentine Primera Division clubs (EDLP, Boca, River, Racing, Independiente, San Lorenzo) on range, category mix, pricing, demographic coverage and variant depth.",
-    tools: "Python, Streamlit, Pandas, Web Scraping, Plotly, Render",
+      "League-wide tactical study of hold-up play on home soil across the EFL Championship, profiling how target forwards link play, retain possession under pressure and translate physical duels into territorial gain. Combines event data with structured visual analysis to compare clubs and individual players.",
+    tools: "Event Data, Python, Pandas, Data Visualisation, Tactical Analysis",
     outcome:
-      "Surfaces commercial whitespace and benchmarks merchandising decisions; built as the practical output of my Master's thesis with EDLP.",
-    liveUrl: "https://edlp-online-stores.onrender.com/",
-    codeUrl: "https://github.com/SmartSportsLab/edlp_online_stores",
-  },
-  {
-    title: "Smart Sports Lab Match Coder",
-    thumbnail: "/projects/match-coder.png",
-    summary:
-      "Designed and built a browser-based video tagging tool for football match analysis. Coders can tag passes, shots, defensive actions, dribbles, fouls and pitch zones live, save full sessions, and export to multiple formats (CSV, Excel, XML, JSON, SQL).",
-    tools: "JavaScript, HTML, CSS, GitHub Pages",
-    outcome:
-      "Lightweight, no-install tool with custom event templates, button presets and structured exports - usable by any analyst with a browser.",
-    liveUrl: "https://smartsportslab.github.io/football-match-coder/",
-    codeUrl: "https://github.com/smartsportslab/football-match-coder",
-  },
-  {
-    title: "Cibao FC - Wyscout Analytics Hub",
-    thumbnail: "/projects/cibao-fc.png",
-    summary:
-      "Streamlit-based analytics workspace built for Cibao FC (Liga Dominicana de Futbol) covering collective performance and opposition analysis from raw Wyscout exports. Multi-page hub spanning Liga and CONCACAF Copa Centroamericana, with a per-90 normalisation pipeline and one-click PDF match reports.",
-    tools: "Python, Streamlit, Pandas, Plotly, ReportLab",
-    outcome:
-      "Delivered to the club's analysis staff to drive opposition prep and post-match review. Spanish UI matching the production deployment, with the login gate removed for portfolio use.",
-    liveUrl: "https://cibao-fc-analysis-app.streamlit.app/",
-    codeUrl: "https://github.com/SmartSportsLab/cibao-fc-analysis-app",
+      "Surfaces which forwards are most valuable as a tactical reference point at home and how their hold-up output supports the team's attacking patterns. Pitchable to recruitment and tactical staff for both opposition prep and target identification.",
+    liveUrl: "/championship-home-holds.pdf",
+    liveLabel: "View Report",
+    codeUrl: "#",
   },
 ]
 
