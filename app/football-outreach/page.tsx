@@ -321,7 +321,24 @@ export default function FootballOutreachPortfolioPage() {
         <div className="mt-6 grid gap-5 md:grid-cols-2">
           {projects.map((project) => (
             <article key={project.title} className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60">
-              {"thumbnail" in project && project.thumbnail && (
+              {"thumbnail" in project && project.thumbnail && project.liveUrl !== "#" && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block aspect-[16/9] w-full overflow-hidden bg-slate-950 transition hover:opacity-90"
+                  aria-label={`Open ${project.title}`}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={project.thumbnail}
+                    alt={`${project.title} preview`}
+                    className="h-full w-full object-cover object-top"
+                    loading="lazy"
+                  />
+                </a>
+              )}
+              {"thumbnail" in project && project.thumbnail && project.liveUrl === "#" && (
                 <div className="aspect-[16/9] w-full overflow-hidden bg-slate-950">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
